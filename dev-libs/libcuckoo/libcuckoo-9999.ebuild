@@ -1,7 +1,7 @@
 EAPI=6
 
-DESCRIPTION=""
-HOMEPAGE="http://ctags.sourceforge.net"
+DESCRIPTION="concurrent hash-table impl"
+HOMEPAGE="https://github.com/efficient/libcuckoo"
 EGIT_REPO_URI="
 		git://github.com/efficient/libcuckoo.git
 		https://github.com/efficient/libcuckoo.git
