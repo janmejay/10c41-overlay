@@ -7,6 +7,7 @@ EGIT_REPO_URI="
 		https://github.com/efficient/libcuckoo.git
 "
 SRC_URI=""
+inherit git-r3
 
 LICENSE="Apache-2.0"
 SLOT="0"
