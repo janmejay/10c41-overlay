@@ -13,15 +13,3 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
-src_prepare() {
-    default
-    eautoreconf
-}
-
-src_configure() {
-    econf
-}
-
-src_install() {
-    emake DESTDIR="${D}" install
-}
