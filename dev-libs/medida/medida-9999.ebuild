@@ -15,9 +15,13 @@ KEYWORDS="~amd64"
 
 IUSE="doc"
 
+medida_plugin_use() {
+        echo -DBUILD_${2:-$1}=$(usex "$1")
+}
+
 src_configure() {
         mycmakeargs=(
-                $(cmake-utils_use_build doc DOCS)
+                $(medida_plugin_use doc DOCS)
         )
         cmake-utils_src_configure
 }
