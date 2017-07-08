@@ -7,21 +7,16 @@ EGIT_REPO_URI="
 		https://github.com/efficient/libcuckoo.git
 "
 SRC_URI=""
-inherit git-r3 autotools
+inherit git-r3 cmake-utils
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-
-src_prepare() {
-    default
-    eautoreconf
-}
 
 src_configure() {
     econf
 }
 
 src_install() {
-    emake DESTDIR="${D}" install
+    cmake-utils_src_configure
 }
