@@ -14,9 +14,5 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 src_configure() {
-    econf
-}
-
-src_install() {
     cmake-utils_src_configure
 }
